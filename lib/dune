@@ -1,3 +1,7 @@
+(env
+ (dev
+   (flags (:standard -w -27-32))))
+
 (library
  (name exssg)
  (libraries tyxml base lwt))

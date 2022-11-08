@@ -2,8 +2,8 @@ open Tyxml
 
 let html =
   Layout.render
-    ~site_title:"Resume"
-    Html.(div ~a:[ a_class [ "markdown-body" ] ] [ txt "{{ body }}" ])
+    ~site_name:"Resume"
+    Html.(div ~a:[ a_class [ "markdown-body"; "bg-base-100" ] ] [ txt "{{ body }}" ])
 
 
 let output_file filename =

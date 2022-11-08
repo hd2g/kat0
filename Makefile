@@ -7,7 +7,7 @@ build/css:
 	yarn build
 
 build/watch:
-	find lib/*.ml -type f | entr sh -c "make build && make build/css"
+	find lib bin static -type f | entr sh -c "make build && make build/css"
 
 serve:
 	yarn serve -p $(PORT)

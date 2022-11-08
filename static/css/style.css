@@ -1,6 +1,14 @@
+@import './pico.min.css';
+@import './github-markdown.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import('./css/pico.min.css');
-@import('./css/github-markdown.css');
+.header-image {
+  @apply pb-16;
+
+  background-image: url("./static/image/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
