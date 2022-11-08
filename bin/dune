@@ -1,0 +1,9 @@
+(env
+ (dev
+  (flags (:standard -w -32))))
+
+(executable
+ (public_name exssg)
+ (name main)
+ (promote (until-clean))
+ (libraries exssg yocaml yocaml_unix))

@@ -1,0 +1,3 @@
+(library
+ (name exssg)
+ (libraries tyxml base lwt))
