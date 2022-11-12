@@ -3,4 +3,5 @@
 /node_modules/
 /style.css
 /bin/main.exe
-/bin/main.exe
+resume.html
+/bin/*.exe

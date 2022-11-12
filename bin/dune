@@ -6,4 +6,4 @@
  (public_name exssg)
  (name main)
  (promote (until-clean))
- (libraries exssg yocaml yocaml_unix))
+ (libraries exssg logs omd yaml yaml.unix ezjsonm yocaml yocaml_unix yocaml_yaml yocaml_markdown yocaml_mustache))

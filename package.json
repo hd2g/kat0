@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tailwindcss -i ./static/css/style.css -o style.css"
+    "build:css": "tailwindcss -i ./static/css/style.css -o ./docs/style.css"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.6",

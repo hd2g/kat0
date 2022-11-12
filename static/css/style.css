@@ -2,13 +2,23 @@
 @import './github-markdown.css';
 
 @tailwind base;
+@layer base {
+  html {
+    font-family: font-sans;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
 
 .header-image {
   @apply pb-16;
 
-  background-image: url("./static/image/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
+  background-image: url("image/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.markdown-body table * {
+  @apply bg-base-200;
 }

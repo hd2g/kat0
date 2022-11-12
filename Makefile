@@ -1,13 +1,17 @@
 PORT := 8000
+PUBLIC_DIR := ./docs
+
+all: build build/css
 
 build:
+	pandoc resume.md -f gfm -o resume.html
 	dune exec bin/main.exe
 
 build/css:
-	yarn build
+	yarn build:css
 
 build/watch:
-	find lib bin static -type f | entr sh -c "make build && make build/css"
+	find resume.md lib bin static -type f | entr sh -c "make build && make build/css"
 
 serve:
-	yarn serve -p $(PORT)
+	yarn serve $(PUBLIC_DIR) -p $(PORT)
