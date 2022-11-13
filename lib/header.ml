@@ -13,13 +13,13 @@ let render (config : Config.t) =
         [ h1 [ strong ~a:[ a_class [ "text-4xl" ] ] [ txt config.title ] ]
         ; div ~a:[ a_class [ "pt-4"; "pb-8" ] ] description'
         ]
-    ; p
-        [ Elem.a_blank
-            ~attrs:
-              [ a_href config.contact.link
-              ; a_role [ "button" ]
-              ; a_onclick "event.preventDefault()"
-              ]
-            [ txt config.contact.name ]
-        ]
+      (* ; p *)
+      (*     [ Elem.a_blank *)
+      (*         ~attrs: *)
+      (*           [ a_href config.contact.link *)
+      (*           ; a_role [ "button" ] *)
+      (*           ; a_onclick "event.preventDefault()" *)
+      (*           ] *)
+      (*         [ txt config.contact.name ] *)
+      (*     ] *)
     ]
