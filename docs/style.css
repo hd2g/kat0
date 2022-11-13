@@ -5556,6 +5556,10 @@ html {
   display:table
 }
 
+.grid-flow-row{
+  grid-auto-flow:row
+}
+
 .grid-flow-col{
   grid-auto-flow:column
 }

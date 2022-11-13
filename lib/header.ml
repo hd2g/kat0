@@ -14,11 +14,9 @@ let render (config : Config.t) =
         ; div ~a:[ a_class [ "pt-4"; "pb-8" ] ] description'
         ]
     ; p
-        [ a
-            ~a:
-              [ a_target "_blank"
-              ; a_rel [ `Noopener; `Noreferrer ]
-              ; a_href config.contact.link
+        [ Elem.a_blank
+            ~attrs:
+              [ a_href config.contact.link
               ; a_role [ "button" ]
               ; a_onclick "event.preventDefault()"
               ]

@@ -11,14 +11,7 @@ let dropdown brief elems =
   let items =
     List.map
       (fun { attrs; name; link } ->
-        li
-          [ a
-              ~a:
-                (List.append
-                   [ a_href link; a_rel [ `Noopener; `Noreferrer ]; a_target "_blank" ]
-                   attrs)
-              [ txt name ]
-          ])
+        li [ Elem.a_blank ~attrs:(List.append [ a_href link ] attrs) [ txt name ] ])
       elems
   in
   details
