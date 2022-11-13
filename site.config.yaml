@@ -1,11 +1,11 @@
-title: Resume
+title: kat0's Profile
 description: |
   個人事業主(フリーランス)として活動中のkat0です。
-  システム開発、業務委託(準委任契約)などご相談は
-  以下「お問い合わせ」ボタン先よりご連絡下さい。
+  主に準委任契約(業務委託)にて仕事を請負わせて頂いています。
+  よろしければ「SNS」もご覧ください。
 contact:
-  name: お問い合わせ
-  link: "comming soom..."
+  name: このサイトのソースコードを見る
+  link: https://github.com/hd2g/kat0
 sns:
   - name: Twitter
     link: https://twitter.com/hd2g2g
