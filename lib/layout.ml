@@ -10,7 +10,7 @@ let render (config : Config.t) contents =
          ; meta
              ~a:[ a_name "viewport"; a_content "width=device-width,initial-scale=1" ]
              ()
-         ; link ~rel:[ `Stylesheet ] ~href:"style.css" ()
+         ; link ~rel:[ `Stylesheet ] ~href:"https://hd2g.github.io/kat0/style.css" ()
          ])
       (body
          [ div

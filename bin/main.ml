@@ -34,4 +34,20 @@ let task =
     >>^ Stdlib.snd)
 
 
-let () = Yocaml_unix.execute task
+let article = Filename.concat destination "articles"
+
+let blog =
+  process_files [ "./articles" ] (with_extension "md") (fun file ->
+    let filename = basename file |> into article in
+    let destination = replace_extension filename "html" in
+    let open Build in
+    create_file
+      destination
+      (track_binary_update
+      >>> Yocaml_yaml.read_file_with_metadata (module Metadata.Article) file
+      >>> Yocaml_markdown.content_to_html ()
+      >>> Yocaml_mustache.apply_as_template (module Metadata.Article) index_filename
+      >>^ Stdlib.snd))
+
+
+let () = Yocaml_unix.execute (task >> blog)
