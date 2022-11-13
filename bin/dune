@@ -1,9 +1,21 @@
 (env
  (dev
-  (flags (:standard -w -32))))
+  (flags
+   (:standard -w -32))))
 
 (executable
  (public_name exssg)
  (name main)
  (promote (until-clean))
- (libraries exssg logs omd yaml yaml.unix ezjsonm yocaml yocaml_unix yocaml_yaml yocaml_markdown yocaml_mustache))
+ (libraries
+  exssg
+  logs
+  omd
+  yaml
+  yaml.unix
+  ezjsonm
+  yocaml
+  yocaml_unix
+  yocaml_yaml
+  yocaml_markdown
+  yocaml_mustache))

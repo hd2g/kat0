@@ -1,7 +1,14 @@
 open Tyxml
 
+let sns_icons_of_config (config : Config.t) =
+  config.sns
+  |> List.map (fun { Config.Other_site.name; link } ->
+       match List.assoc_opt name Icons.as_acons with
+       | Some icon -> Html.a ~a:[ Html.a_href link ] [ icon ]
+       | None -> Html.a ~a:[ Html.a_href link; Html.a_class [ "link" ] ] [ Html.txt name ])
+
+
 let render (config : Config.t) =
-  let sns_list = Config.other_site_to_acons config.sns in
   Html.(
     footer
       ~a:
@@ -22,9 +29,8 @@ let render (config : Config.t) =
               ; txt " All Right Reserved."
               ]
           ]
-      ; div
-          ~a:[ a_class [ "grid-flow-col"; "gap-4" ] ]
-          [ a ~a:[ a_href (List.assoc "Twitter" sns_list) ] [ Icons.twitter ]
-          ; a ~a:[ a_href (List.assoc "GitHub" sns_list) ] [ Icons.github ]
-          ]
+      ; div ~a:[ a_class [ "grid-flow-col"; "gap-4" ] ] (sns_icons_of_config config)
+        (* [ a ~a:[ a_href (List.assoc "Twitter" sns_list) ] [ Icons.twitter ] *)
+        (* ; a ~a:[ a_href (List.assoc "GitHub" sns_list) ] [ Icons.github ] *)
+        (* ] *)
       ])

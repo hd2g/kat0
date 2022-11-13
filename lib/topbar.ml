@@ -33,7 +33,8 @@ let sns (config : Config.t) =
   dropdown
     "SNS"
     (List.map
-       (fun (sns : Config.other_site) -> { attrs = []; name = sns.name; link = sns.link })
+       (fun (sns : Config.Other_site.t) ->
+         { attrs = []; name = sns.name; link = sns.link })
        config.sns)
 
 

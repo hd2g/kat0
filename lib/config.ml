@@ -1,15 +1,17 @@
-type other_site =
-  { name : string
-  ; link : string
-  }
+module Other_site = struct
+  type t =
+    { name : string
+    ; link : string
+    }
 
-let other_site_to_acons = List.map (fun other_site -> other_site.name, other_site.link)
+  let acons_of = List.map (fun other_site -> other_site.name, other_site.link)
+end
 
 type t =
   { title : string
   ; description : string
-  ; contact : other_site
-  ; sns : other_site list
+  ; contact : Other_site.t
+  ; sns : Other_site.t list
   }
 
 exception Config_parse_error
@@ -20,7 +22,7 @@ let of_file_exn pathname =
   let title = Ezjsonm.(find yaml [ "title" ] |> get_string) in
   let description = Ezjsonm.(find yaml [ "description" ] |> get_string) in
   let contact =
-    { name = Ezjsonm.(find yaml [ "contact"; "name" ] |> get_string)
+    { Other_site.name = Ezjsonm.(find yaml [ "contact"; "name" ] |> get_string)
     ; link = Ezjsonm.(find yaml [ "contact"; "link" ] |> get_string)
     }
   in
@@ -28,7 +30,7 @@ let of_file_exn pathname =
     Ezjsonm.(find yaml [ "sns" ] |> get_list get_dict)
     |> List.map (fun sns ->
          match sns with
-         | [ ("name", `String name); ("link", `String link) ] -> { name; link }
+         | [ ("name", `String name); ("link", `String link) ] -> { Other_site.name; link }
          | _ -> raise Config_parse_error)
   in
   { title; description; contact; sns }
