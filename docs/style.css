@@ -5552,8 +5552,29 @@ html {
   bottom:0px
 }
 
+.my-8{
+  margin-top:2rem;
+  margin-bottom:2rem
+}
+
+.flex{
+  display:flex
+}
+
 .table{
   display:table
+}
+
+.h-screen{
+  height:100vh
+}
+
+.flex-1{
+  flex:1 1 0%
+}
+
+.flex-grow{
+  flex-grow:1
 }
 
 .grid-flow-row{
@@ -5562,6 +5583,10 @@ html {
 
 .grid-flow-col{
   grid-auto-flow:column
+}
+
+.flex-col{
+  flex-direction:column
 }
 
 .items-center{
@@ -5598,9 +5623,22 @@ html {
   padding-bottom:2rem
 }
 
+.pt-8{
+  padding-top:2rem
+}
+
 .text-4xl{
   font-size:2.25rem;
   line-height:2.5rem
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem
+}
+
+.italic{
+  font-style:italic
 }
 
 .text-white{
@@ -5611,6 +5649,11 @@ html {
 .text-base-content{
   --tw-text-opacity:1;
   color:hsl(var(--bc) / var(--tw-text-opacity))
+}
+
+.text-gray-500{
+  --tw-text-opacity:1;
+  color:rgb(107 114 128 / var(--tw-text-opacity))
 }
 
 .header-image{

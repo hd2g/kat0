@@ -1,7 +1,8 @@
 /_build/
-/index.html
+/*.html
 /node_modules/
 /style.css
 /bin/main.exe
 resume.html
 /bin/*.exe
+articles/html/*

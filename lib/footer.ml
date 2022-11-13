@@ -11,7 +11,6 @@ let sns_icons_of_config (config : Config.t) =
            ~attrs:[ Html.a_href link; Html.a_class [ "link" ] ]
            [ Html.txt name ])
 
-
 let render (config : Config.t) =
   Html.(
     footer

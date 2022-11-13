@@ -1,6 +1,6 @@
 open Tyxml
 
-let render (config : Config.t) contents =
+let render (config : Config.t) css_path contents =
   Html.(
     html
       ~a:[ a_lang "ja" ]
@@ -10,12 +10,13 @@ let render (config : Config.t) contents =
          ; meta
              ~a:[ a_name "viewport"; a_content "width=device-width,initial-scale=1" ]
              ()
-         ; link ~rel:[ `Stylesheet ] ~href:"https://hd2g.github.io/kat0/style.css" ()
+         ; link ~rel:[ `Stylesheet ] ~href:css_path ()
          ])
       (body
+         ~a:[ a_class [ "flex"; "flex-col"; "h-screen" ] ]
          [ div
              ~a:[ a_class [ "header-image" ]; a_user_data "theme" "dark" ]
              [ Topbar.render config; Header.render config ]
-         ; main ~a:[ a_class [ "container" ] ] [ contents ]
+         ; main ~a:[ a_class [ "container"; "flex-grow" ] ] [ contents ]
          ; Footer.render config
          ]))

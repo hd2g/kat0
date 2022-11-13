@@ -5,4 +5,4 @@
 
 (library
  (name exssg)
- (libraries tyxml base lwt yaml yaml.unix ezjsonm))
+ (libraries dotenv tyxml base lwt yaml yaml.unix ezjsonm))
