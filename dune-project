@@ -1,22 +1,22 @@
 (lang dune 3.5)
 
-(name exssg)
+(name kat0)
 
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github hd2g/kat0))
 
-(authors "Author Name")
+(authors "hd2g")
 
-(maintainers "Maintainer Name")
+(maintainers "hd2g")
 
 (license LICENSE)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/hd2g/kat0)
 
 (package
- (name exssg)
+ (name kat0)
  (synopsis "A short synopsis")
  (description "A longer description")
  (depends ocaml dune)
