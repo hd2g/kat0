@@ -28,15 +28,10 @@ let task =
     index_file_fullname
     (track_binary_update
     >>> Yocaml_yaml.read_file_with_metadata (module Metadata.Page) resume_filename
+    (* TODO(#10)(#11): Wrap "pandoc" command and implement "Yocaml_markdown.pandoc ~style:`Gfm ()" *)
     (* >>> Yocaml_markdown.content_to_html () *)
     >>> Yocaml_mustache.apply_as_template (module Metadata.Page) index_filename
     >>^ Stdlib.snd)
-
-
-let () =
-  Logs.(
-    set_level ~all:true (Some Debug);
-    set_reporter (Logs_fmt.reporter ()))
 
 
 let () = Yocaml_unix.execute task
