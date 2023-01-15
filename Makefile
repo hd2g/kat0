@@ -1,15 +1,18 @@
-STAGE := DEVELOP
-
 PORT := 8000
 PUBLIC_DIR := ./docs
 
 all: build/html build/css
 
+.PHONE: format
+format:
+	dune build @fmt --auto-promote
+
+.PHONE: build/html/resume
 build/html/resume:
 	pandoc resume.md -f gfm -o resume.html
 
 # build/html/articles:
-	# bash scripts/build_html_articles.sh
+# 	bash scripts/build_html_articles.sh
 
 build/html: build/html/resume # build/html/articles
 	dune exec bin/main.exe
@@ -18,8 +21,8 @@ build/html: build/html/resume # build/html/articles
 build/css:
 	yarn build:css
 
-.PHONE: build/watch
-build/watch:
+.PHONE: watch
+watch:
 	find tailwind.config.js resume.md articles lib bin static -type f | entr sh -c "make all"
 
 .PHONY: serve

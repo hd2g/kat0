@@ -1,7 +1,7 @@
 #!/bin/bash -eu
 
+rm docs/articles/*.html
 pushd articles
-rm html/*.html 2> /dev/null
 for md in *.md; do
   destination="html/${md/.md/.html}"
 
