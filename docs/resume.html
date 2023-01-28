@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+ <head><title>kat0's Profile</title><meta charset="utf8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="https://hd2g.github.io/kat0/style.css"/>
+ </head>
+ <body class="flex flex-col h-screen">
+  <div class="header-image" data-theme="dark">
+   <nav class="container-fluid">
+    <ul>
+     <li>
+      <a href="/" class="contrast" onclick="evnet.preventDefault()">
+       <strong></strong>
+      </a>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <details role="list" dir="rtl">
+       <summary aria-haspopup="listbox" role="link" class="contrast">SNS
+       </summary>
+       <ul role="listbox">
+        <li>
+         <a target="_blank" rel="noopener noreferrer"
+          href="https://twitter.com/hd2g2g">Twitter
+         </a>
+        </li>
+        <li>
+         <a target="_blank" rel="noopener noreferrer"
+          href="https://www.wantedly.com/id/hd2g_kat0">Wantedly
+         </a>
+        </li>
+        <li>
+         <a target="_blank" rel="noopener noreferrer"
+          href="https://github.com/hd2g">GitHub
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+    </ul>
+   </nav>
+   <header class="container">
+    <div><h1><strong class="text-4xl">kat0's Profile</strong></h1>
+     <div class="pt-4 pb-8">
+      <p class="text-white text-md">
+       個人事業主(フリーランス)として活動中のkat0です。
+      </p>
+      <p class="text-white text-md">
+       主に準委任契約(業務委託)にて仕事を請負わせて頂いています。
+      </p>
+      <p class="text-white text-md">
+       よろしければ「SNS」もご覧ください。
+      </p><p class="text-white text-md"></p>
+     </div>
+    </div>
+   </header>
+  </div>
+  <main class="container flex-grow">
+   <div class="markdown-body bg-base-100"><h1 id='職務経歴'>職務経歴</h1>
+<h2 id='職務経歴概要'>職務経歴概要</h2><h3 id='excelvbaエンジニア'>ExcelVBAエンジニア</h3>
+<ul>
+<li>期間: 約 4年</li>
+<li>使用言語:
+<ul>
+<li>ExcelVBA</li>
+<li>AccessVBA</li>
+<li>PowerPointVBA</li>
+<li>OutlookVBA</li>
+<li>VBScript(JScript)</li>
+<li>BAT</li>
+</ul></li>
+<li>概要:
+<ul>
+<li>データベースの移行に伴い、以下のような作業
+<ul>
+<li>新規データベース(Access)の構築</li>
+<li>移行作業自動化ツールの作成(ExcelVBA)</li>
+<li>検索ツールの作成(ExcelVBA):
+<ul>
+<li>印刷用の整形及び印刷機能</li>
+</ul></li>
+</ul></li>
+<li>部署内にて発生する長時間事務作業の自動化(VBScript,BAT,ExcelVBA,OutlookVBA)</li>
+<li>Azure上にて運用中のシステムデータから、月次レポートを作成するツールの開発(ExcelVBA,PowerPointVBA)
+<ul>
+<li>xlsxファイルから各種グラフを作成 -&gt; パワーポイントへ貼り付け</li>
+<li>tsvファイルをマージ -&gt; 各種グラフ,Pivot,テーブル作成 -&gt;
+パワーポイントへ反映</li>
+<li>上記作業の際,調査etcの為、Azure cli,PowerShell,C#を使用</li>
+</ul></li>
+<li>業務改善や、空調機修理エンジニアの作業実績評価用レポート作成ツールの開発(ExcelVBA,PowerPointVBA)
+<ul>
+<li>データ集積,集計</li>
+<li>簡易分析</li>
+<li>Excel,PowerPointレポートの作成</li>
+</ul></li>
+<li>営業業務支援ツール作成(ExcelVBA)
+<ul>
+<li>営業対象となる条件を設定ファイル化</li>
+<li>設定ファイルをもとに対象顧客一覧を作成</li>
+</ul></li>
+<li>会計作業自動化ツール(改修,機能追加)(ExcelVBA)</li>
+<li>支部内,一部地域を除いた全国各支店の事務作業の自動化ツール作成(ExcelVBA)</li>
+</ul></li>
+</ul><h3 id='バックエンドエンジニア'>バックエンドエンジニア</h3>
+<ul>
+<li>期間: 約 10ヶ月</li>
+<li>使用言語:
+<ul>
+<li>TypeScript</li>
+</ul></li>
+<li>インフラストラクチャ:
+<ul>
+<li>AWS
+<ul>
+<li>Lambda</li>
+<li>API Gateway</li>
+<li>S3</li>
+</ul></li>
+</ul></li>
+<li>フレームワーク:
+<ul>
+<li>React.js</li>
+</ul></li>
+<li>ライブラリ:
+<ul>
+<li>Jest</li>
+<li>ESList</li>
+<li>prettier</li>
+<li>axios</li>
+</ul></li>
+<li>ツール:
+<ul>
+<li>JIRA</li>
+<li>Confluence</li>
+<li>Mattermost</li>
+<li>GitLab</li>
+</ul></li>
+<li>概要:
+<ul>
+<li>エスカレーション作業の自動化,監視システムの提案及びモック作成
+<ul>
+<li>PagerDuty Rest APIを使用</li>
+<li>公式のSDKが社内規約等により使用できなかったため、自作</li>
+<li>具体的なサービス内容等の提案から、開発、チーム内ユーザーへのリリースまでを担当</li>
+</ul></li>
+</ul></li>
+</ul><h2 id='pr'>PR</h2>
+<p>約 4年
+程、派遣社員及び個人事業主として、1人でヒアリング、要求定義から運用、保守まで行ってきました。</p><p>「ドキュメントが無い」<br />
+「前任者が居ない」<br />
+「明確な要求が無い」</p>
+<p>これまでお世話になりましたクライアント様の環境では、このような状態となっていることがほとんどでした。<br />
+担当者様の疑問や不安感を、1つずつ明確化し解消するため、</p><p>ラフなヒアリング<br />
+プロトタイプを用いた実演<br />
+細かく分けた機能を、お客様がいつでも試せるようなリリース環境作り</p>
+<p>を行ってまいりました。<br />
+前職の美容師の頃から、「お客様の隠れた要望を、お客様と一緒に実現できるような仕事」ができるよう心がけております。</p><h2 id='業務経歴'>業務経歴</h2>
+<h3 id='202107---202205'>2021/07 - 2022/05</h3><ul>
+<li>業種: ソフトウェア会社</li>
+<li>業務名: 新規ツールの開発及び既存ツールの改修</li>
+<li>OS: Windows10</li>
+<li>言語:
+<ul>
+<li>ExcelVBA</li>
+<li>TypeScript</li>
+<li>Python3
+<ul>
+<li>チーム内,私的ツール作成に使用
+<ul>
+<li>週次レポートの作成</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>役割</li>
+</ul>
+<table>
+<thead>
+<tr class='header'>
+<th style='text-align: center;'>マネージャー</th>
+<th style='text-align: center;'>リーダー</th>
+<th style='text-align: center;'>調査,分析</th>
+<th style='text-align: center;'>要件,基本設計</th>
+<th style='text-align: center;'>詳細設計</th>
+<th style='text-align: center;'>開発,テスト</th>
+<th style='text-align: center;'>結合テスト</th>
+<th style='text-align: center;'>指導,教育</th>
+<th style='text-align: center;'>運用,保守</th>
+</tr>
+</thead>
+<tbody>
+<tr class='odd'>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>業務内容:</p>
+<details>
+
+<ul>
+<li>エスカレーション作業の自動化,監視システムの提案及びモック作成
+<ul>
+<li>PagerDuty Rest
+APIを使用した、エスカレーション業務の自動化及び監視システムの構築
+<ul>
+<li>TypeScript,React.js,AWS Lambda,AWS API Gateway,AWS S3を使用</li>
+<li>git,GitLabにてバージョン管理</li>
+<li>JIRAにてタスク管理</li>
+<li>Confluenceにて情報共有</li>
+</ul></li>
+</ul></li>
+<li>既存ExcelVBAツールの機能追加</li>
+<li>新規ExcelVBAツールの作成
+<ul>
+<li>DOS Command,BATファイルと連携したデータ加工</li>
+<li>Excel,PowerPointレポートファイルの作成</li>
+</ul></li>
+</ul>
+</details>
+</li>
+</ul>
+<h3 id='202105---202106'>2021/05 - 2021/06</h3><ul>
+<li>業種: ソフトウェア会社</li>
+<li>業務名: 新規ツールの開発及び既存ツールの改修</li>
+<li>OS: Windows10</li>
+<li>言語:
+<ul>
+<li>ExcelVBA</li>
+<li>PowerPointVBA</li>
+<li>Azure cli</li>
+<li>C#</li>
+</ul></li>
+<li>役割</li>
+</ul>
+<table>
+<thead>
+<tr class='header'>
+<th style='text-align: center;'>マネージャー</th>
+<th style='text-align: center;'>リーダー</th>
+<th style='text-align: center;'>調査,分析</th>
+<th style='text-align: center;'>要件,基本設計</th>
+<th style='text-align: center;'>詳細設計</th>
+<th style='text-align: center;'>開発,テスト</th>
+<th style='text-align: center;'>結合テスト</th>
+<th style='text-align: center;'>指導,教育</th>
+<th style='text-align: center;'>運用,保守</th>
+</tr>
+</thead>
+<tbody>
+<tr class='odd'>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>業務内容:</p>
+<details>
+
+<ul>
+<li>Azureにて運用中システムの月次レポート作成ツール開発
+<ul>
+<li>xlsxファイルから各種グラフを作成 -&gt; パワーポイントへ貼り付け</li>
+<li>tsvファイルをマージ -&gt; 各種グラフ,Pivot,テーブル作成 -&gt;
+パワーポイントへ反映</li>
+</ul></li>
+<li>上記作業の際,調査etcの為、Azure cli,PowerShell,C#を使用</li>
+</ul>
+</details>
+</li>
+</ul>
+<h3 id='201903---202009'>2019/03 - 2020/09</h3><ul>
+<li>業種: 空調機メーカー</li>
+<li>業務名: 自動化ツール開発及び手動作業</li>
+<li>OS: Windows7,Windows10</li>
+<li>Database: Access</li>
+<li>言語:
+<ul>
+<li>ExcelVBA</li>
+<li>AccessVBA</li>
+<li>OutlookVBA</li>
+<li>PowerPointVBA</li>
+<li>VBScript</li>
+<li>JScript</li>
+<li>BAT</li>
+</ul></li>
+<li>役割</li>
+</ul>
+<table>
+<thead>
+<tr class='header'>
+<th style='text-align: center;'>マネージャー</th>
+<th style='text-align: center;'>リーダー</th>
+<th style='text-align: center;'>調査,分析</th>
+<th style='text-align: center;'>要件,基本設計</th>
+<th style='text-align: center;'>詳細設計</th>
+<th style='text-align: center;'>開発,テスト</th>
+<th style='text-align: center;'>結合テスト</th>
+<th style='text-align: center;'>指導,教育</th>
+<th style='text-align: center;'>運用,保守</th>
+</tr>
+</thead>
+<tbody>
+<tr class='odd'>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>業務内容:</p>
+<details>
+
+<ul>
+<li>業務改善,人事評価等の為のデータ集計,簡易分析,レポート作成</li>
+<li>営業業務支援ツール作成</li>
+<li>会計作業自動化ツール(改修,機能追加)</li>
+<li>支部内,一部地域を除いた全国各支店の事務作業の自動化ツール作成</li>
+</ul>
+</details>
+</li>
+</ul>
+<h3 id='201807---201812'>2018/07 - 2018/12</h3><ul>
+<li>業種: 金融機関(銀行)</li>
+<li>業務名: Accessデータベース構築及びExcel検索フォーム開発</li>
+<li>OS: WindowsXP,Windows7</li>
+<li>Database: Access</li>
+<li>言語:
+<ul>
+<li>ExcelVBA</li>
+<li>AccessVBA</li>
+<li>OutlookVBA</li>
+<li>VBScript</li>
+<li>JScript</li>
+<li>BAT</li>
+</ul></li>
+<li>役割</li>
+</ul>
+<table>
+<thead>
+<tr class='header'>
+<th style='text-align: center;'>マネージャー</th>
+<th style='text-align: center;'>リーダー</th>
+<th style='text-align: center;'>調査,分析</th>
+<th style='text-align: center;'>要件,基本設計</th>
+<th style='text-align: center;'>詳細設計</th>
+<th style='text-align: center;'>開発,テスト</th>
+<th style='text-align: center;'>結合テスト</th>
+<th style='text-align: center;'>指導,教育</th>
+<th style='text-align: center;'>運用,保守</th>
+</tr>
+</thead>
+<tbody>
+<tr class='odd'>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>業務内容:</p>
+<details>
+
+<ul>
+<li>データベースの移行に伴い、以下作業
+<ul>
+<li>新規データベースの構築</li>
+<li>検索ツール(印刷用の整形機能あり)</li>
+</ul></li>
+<li>部署内にて発生する長時間事務作業の自動化</li>
+<li>社内サイトの不具合調査,修正</li>
+</ul>
+</details>
+</li>
+</ul>
+<h3 id='201903---202210'>2019/03 - 2022/10</h3><ul>
+<li>業種: 衣料系</li>
+<li>業務名: ExcelVBAがメインの業務改善ツール開発</li>
+<li>OS: Windows7,Windows10</li>
+<li>言語:
+<ul>
+<li>ExcelVBA</li>
+<li>OutlookVBA</li>
+</ul></li>
+<li>役割</li>
+</ul>
+<table>
+<thead>
+<tr class='header'>
+<th style='text-align: center;'>マネージャー</th>
+<th style='text-align: center;'>リーダー</th>
+<th style='text-align: center;'>調査,分析</th>
+<th style='text-align: center;'>要件,基本設計</th>
+<th style='text-align: center;'>詳細設計</th>
+<th style='text-align: center;'>開発,テスト</th>
+<th style='text-align: center;'>結合テスト</th>
+<th style='text-align: center;'>指導,教育</th>
+<th style='text-align: center;'>運用,保守</th>
+</tr>
+</thead>
+<tbody>
+<tr class='odd'>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>業務内容:</p>
+<details>
+
+<ul>
+<li>以下のようなツールを納品済み、保守中
+<ul>
+<li>株主総会提出、社長,役員様の経営判断に使用する各種レポート作成ツール</li>
+<li>DM自動作成ツール</li>
+<li>給与計算ツール</li>
+<li>営業データスクレイピングツール など</li>
+</ul></li>
+</ul>
+</details>
+</li>
+</ul>
+<h3 id='201710---202210'>2017/10 - 2022/10</h3><ul>
+<li>業種: EC,ECコンサルタント</li>
+<li>業務名: 友人との共同プロジェクト(受託)にてツール開発</li>
+<li>OS: Windows10</li>
+<li>Database: Access</li>
+<li>言語:
+<ul>
+<li>ExcelVBA</li>
+<li>OutlookVBA</li>
+<li>VBScript</li>
+<li>JScript</li>
+<li>BAT</li>
+<li>R(3.5.3)</li>
+<li>Python3</li>
+</ul></li>
+<li>役割</li>
+</ul>
+<table>
+<thead>
+<tr class='header'>
+<th style='text-align: center;'>マネージャー</th>
+<th style='text-align: center;'>リーダー</th>
+<th style='text-align: center;'>調査,分析</th>
+<th style='text-align: center;'>要件,基本設計</th>
+<th style='text-align: center;'>詳細設計</th>
+<th style='text-align: center;'>開発,テスト</th>
+<th style='text-align: center;'>結合テスト</th>
+<th style='text-align: center;'>指導,教育</th>
+<th style='text-align: center;'>運用,保守</th>
+</tr>
+</thead>
+<tbody>
+<tr class='odd'>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'>✅</td>
+<td style='text-align: center;'></td>
+<td style='text-align: center;'>✅</td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>業務内容:</p>
+<details>
+
+<ul>
+<li>以下のようなツールを納品済み
+<ul>
+<li>Excelファイルベースで運用していたデータをAccessDB化</li>
+<li>AccessDBとの各種連携ツール</li>
+<li>集計、プロット(カレンダー上にヒートマップを表示)画像作成用のRスクリプト
+など</li>
+</ul></li>
+</ul>
+</details>
+</li>
+</ul></div>
+  </main>
+  <footer class="footer bottom-0 items-center p-12 text-base-content
+   bg-base-300">
+   <div class="items-center grid-flow-row">
+    <p>kat0's Profile site is maintenanced in 
+     <a target="_blank" rel="noopener noreferrer" class="link"
+      href="https://github.com/hd2g/kat0">kat0's Profile
+     </a>.
+    </p>
+    <p>This website was generated by 
+     <a target="_blank" rel="noopener noreferrer" class="link"
+      href="https://pages.github.com/">GitHub Pages
+     </a>.
+    </p>
+   </div>
+   <div class="grid-flow-col gap-4">
+    <a target="_blank" rel="noopener noreferrer"
+     href="https://twitter.com/hd2g2g" class="link">
+     <svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current"
+      width="24" viewBox="0 0 24 24">
+      <path
+       d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+       >
+      </path>
+     </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer"
+     href="https://www.wantedly.com/id/hd2g_kat0" class="link">
+     <svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current"
+      width="24" viewBox="0 0 24 24">
+      <path
+       d="M18.453 14.555c-.171-.111-.658-.764-2.006-3.982a9.192 9.192 0 0 0-.237-.526l-.274-.664-2.362-5.702H8.85l2.362 5.702 2.362 5.706 2.181 5.267a.196.196 0 0 0 .362 0l2.373-5.682a.1.1 0 0 0-.037-.119zm-8.85 0c-.171-.111-.658-.764-2.006-3.982a8.971 8.971 0 0 0-.236-.525l-.276-.665-2.36-5.702H0l2.362 5.702 2.362 5.706 2.181 5.267a.196.196 0 0 0 .362 0l2.374-5.682a.098.098 0 0 0-.038-.119ZM24 6.375a2.851 2.851 0 0 1-2.851 2.852 2.851 2.851 0 0 1-2.852-2.852 2.851 2.851 0 0 1 2.852-2.851A2.851 2.851 0 0 1 24 6.375Z"
+       >
+      </path>
+     </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer"
+     href="https://github.com/hd2g" class="link">
+     <svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current"
+      width="24" viewBox="0 0 24 24">
+      <path
+       d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+       >
+      </path>
+     </svg>
+    </a>
+   </div>
+  </footer>
+ </body>
+</html>

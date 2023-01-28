@@ -3,6 +3,6 @@
 /node_modules/
 /style.css
 /bin/main.exe
-resume.html
+/resume.html
 /bin/*.exe
 articles/html/*

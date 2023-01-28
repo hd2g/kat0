@@ -21,7 +21,6 @@ let dropdown brief elems =
        [ txt brief ])
     [ ul ~a:[ a_role [ "listbox" ] ] items ]
 
-
 let sns (config : Config.t) =
   dropdown
     "SNS"
@@ -29,7 +28,6 @@ let sns (config : Config.t) =
        (fun (sns : Config.Other_site.t) ->
          { attrs = []; name = sns.name; link = sns.link })
        config.sns)
-
 
 let render (config : Config.t) =
   Html.(

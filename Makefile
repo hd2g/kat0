@@ -23,7 +23,7 @@ build/css:
 
 .PHONE: watch
 watch:
-	find tailwind.config.js *.md articles lib bin static -type f | entr sh -c "make all"
+	find tailwind.config.js **/*.html *.md articles lib bin static -type f | entr sh -c "make all"
 
 .PHONY: serve
 serve:

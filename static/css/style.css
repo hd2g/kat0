@@ -19,6 +19,14 @@
   background-size: cover;
 }
 
+.markdown-body * {
+  @apply bg-base-100;
+}
+
 .markdown-body table * {
   @apply bg-base-200;
+}
+
+.markdown-body h1 {
+  @apply mt-10;
 }

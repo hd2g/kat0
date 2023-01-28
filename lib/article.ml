@@ -11,7 +11,7 @@ let render (config : Config.t) =
         [ div
             ~a:[ a_class [ "article-header"; "flex-1"; "my-8" ] ]
             [ p
-                [ small ~a:[ a_class [ "text-gray-500" ] ] [ txt "{{ date.canonical }}" ]
+                [ small ~a:[ a_class [ "text-gray-500" ] ] [ txt "" ]
                 ]
             ; h2 ~a:[ a_class [ "text-2xl" ] ] [ txt "{{ article_title }}" ]
             ; p
@@ -19,8 +19,14 @@ let render (config : Config.t) =
                     ~a:[ a_class [ "pt-8"; "text-gray-500"; "text-md" ] ]
                     [ txt "{{ article_description }}" ]
                 ]
+              (* ; div ~a:[a_class ["divider"]] [] *)
             ]
-        ; div ~a:[ a_class [ "article-body"; "flex-1"; "my-8" ] ] [ txt "{{{ body }}}" ]
+        ; div
+            ~a:
+              [ a_class
+                  [ "article-body"; "markdown-body"; "bg-base-100"; "flex-1"; "my-8" ]
+              ]
+            [ txt "{{{ body }}}" ]
         ])
 
 let output_file (config : Config.t) = output_html_to_file_exn (render config) config
